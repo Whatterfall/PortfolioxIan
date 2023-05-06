@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Portfolio by Ian Arcillas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logotitlebar.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+
+            <div class="menuToggle"></div>
+            <ul class="nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+        </header>
+
+        <section id="home">
+            <div class="content">
+                <h2>Ian Arcillas</h2>
+                <p>I'm a creative person driven by my passion for web and graphic design.</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <img src="hamsta1.png" class="hamsta1">
+        </section>
+
+        <section id="services">
+
+            <div class="secText">
+                <h2>What I am Good At</h2>
+                <p>Here are some skills where I am good at</p>
+            </div>
+
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="css.png" class="csslogo">
+                    <h3>Web Designing</h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="adobelogo.png" class="adobelogo">
+                    <h3>Adobe Creative Suite</h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="proofreadinglogo.png" class="proofreadinglogo">
+                    <h3>Proofreading</h3>
+                </div>
+                <div class="servicesBx">
+                    <img src="vidlogo.png" class="vidlogo">
+                    <h3>Video Editing</h3>
+                </div> 
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="secText">
+                <h2>My Masterpiece</h2>
+                <p>My Masterpiece includes UI/UX Design of our Capstone Project, Realistic 3D Objects, Logo, Typography and Artwork</p>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <div class="dream">
+                        <img src="4.png">
+                        <img src="11.png">
+                        <img src="5.png">
+                        <img src="10.jpg">
+                        <img src="3.png">
+                        <img src="13.png">
+                        <img src="19.png">
+                        <img src="LOGO.jpg">
+                    </div>
+                    <div class="dream">
+                        <img src="8.png">
+                        <img src="2.png">
+                        <img src="7.png">
+                        <img src="14.png">
+                        <img src="16.png">
+                        <img src="1-01.png">
+                    </div>
+                    <div class="dream">
+                        <img src="1.png">
+                        <img src="9.png">
+                        <img src="12.png">
+                        <img src="17.png">
+                        <img src="18.png">
+                        <img src="20.png">
+                    </div>
+                </div>
+
+        </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <h2>Contact Me Here:</h2>
+                <p><ion-icon name="mail-outline"></ion-icon> arcllsxxvii@gmail.com</p>
+                <p><ion-icon name="call-outline"></ion-icon> +639616893971</p>
+                <p class="copyrights">Copyrights © 2023 <b>HAMSTA</b>. All Rights Reserved</p>
+            </div>
+            <img src="final.png" class="hamsta1">
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            let list = document.querySelectorAll('.nav li');
+            function active(){
+                list.forEach((i) =>
+                i.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((i) =>
+            i.addEventListener('click',active));
+
+
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('header');
+            menuToggle.onclick = function(){
+                header.classList.toggle('active');
+            }
+
+        </script>
+    </body>
+</html>
